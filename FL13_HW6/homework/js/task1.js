@@ -1,11 +1,12 @@
 const hundredPercent = 100;
 const numbersAfterComma = 2;
-const number = +prompt('enter number');
-const percentage = +prompt('enter percentage');
+const number = parseFloat(prompt('enter number', ''));
+const percentage = parseFloat(prompt('enter percentage', ''));
+console.log(number, !number, percentage, !percentage);
 if (
-  !number ||
+  isNaN(number) ||
   number < 0 ||
-  !percentage ||
+  isNaN(percentage) ||
   percentage < 0 ||
   percentage > hundredPercent
 ) {
