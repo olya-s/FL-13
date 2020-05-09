@@ -65,22 +65,3 @@ function battle(fighter1, fighter2) {
     }
   }
 }
-
-const fighter1 = new Fighter({
-  name: 'Maximus',
-  damage: 20,
-  strength: 25,
-  agility: 15,
-  hp: 100
-});
-const fighter2 = new Fighter({
-  name: 'Commodus',
-  damage: 25,
-  strength: 20,
-  agility: 20,
-  hp: 90
-});
-
-console.log('fighter1', fighter1);
-console.log('fighter2', fighter2);
-battle(fighter1, fighter2);
