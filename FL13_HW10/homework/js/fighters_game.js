@@ -15,7 +15,7 @@ function Fighter(obj) {
   this.getHealth = () => currentHP;
 
   this.attack = (defender) => {
-    const PERCENTS = 100;
+    const PERCENTS = 101;
     const randomAttack = Math.floor(Math.random() * PERCENTS);
     const isSuccess =
       randomAttack > defender.getStrength() + defender.getAgility();
