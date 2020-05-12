@@ -1,0 +1,76 @@
+#root {
+  cursor: pointer;
+  border: 1px solid rgb(167, 167, 167);
+  border-radius: 5px;
+  box-shadow: 0 0 3px 2px rgb(167, 167, 167);
+  width: 370px;
+  margin: 0 auto;
+  padding: 10px 15px;
+}
+li {
+  list-style-type: none;
+}
+i {
+  vertical-align: middle;
+}
+span {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  padding: 4px;
+  width: calc(100% - 40px);
+}
+span:hover {
+  background: rgb(227, 227, 227);
+}
+span:focus {
+  background: rgb(227, 227, 227);
+  border: none;
+}
+.folder .material-icons {
+  color: rgb(237, 188, 11);
+}
+.file .material-icons {
+  color: rgb(165, 165, 165);
+}
+.folder > ul,
+.folder > div {
+  display: none;
+}
+.folder > div {
+  cursor: auto;
+}
+.folder-open > ul,
+.folder-open > div {
+  display: block;
+}
+.context-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 10px;
+  cursor: pointer;
+  background: rgb(247, 247, 247);
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px 1px rgb(192, 192, 192);
+}
+.context-menu.active {
+  display: block;
+}
+.context-menu li:hover {
+  background: rgb(221, 221, 221);
+}
+.context-menu.disabled {
+  color: rgb(165, 165, 165);
+}
+.context-menu.disabled li:hover {
+  background: inherit;
+}
+input {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
