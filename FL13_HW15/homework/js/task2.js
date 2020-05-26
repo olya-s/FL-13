@@ -14,7 +14,7 @@ const Vehicle = function (color, engine) {
     );
 
   this.performIfSpeeding = () => {
-    console.log("speed is too high, SLOW DOWN!");
+    console.log('speed is too high, SLOW DOWN!');
   };
 };
 
@@ -23,7 +23,7 @@ Vehicle.prototype.upgradeEngine = function (newEngine, maxSpeed) {
     this.engine = newEngine;
     this.maxSpeed = maxSpeed;
   } else {
-    console.log("Impossible upgrade while driving");
+    console.log('Impossible upgrade while driving');
   }
 };
 
@@ -32,7 +32,7 @@ Vehicle.prototype.getInfo = function () {
     engine: this.engine,
     color: this.color,
     maxSpeed: this.maxSpeed,
-    model: this.model || "unknown model",
+    model: this.model || 'unknown model'
   };
 };
 
@@ -52,7 +52,7 @@ Vehicle.prototype.drive = function () {
       }
     }, DELAY_TIME);
   } else {
-    console.log("Already driving");
+    console.log('Already driving');
   }
 };
 
@@ -75,7 +75,7 @@ Vehicle.prototype.stop = function () {
       }
     }, DELAY_TIME);
   } else {
-    console.log("Already slows down");
+    console.log('Already slows down');
   }
 };
 
@@ -98,11 +98,11 @@ Car.prototype.changeColor = function (newColor) {
       this.color = newColor;
     } else {
       console.log(
-        "The selected color is the same as the previous, please choose another one"
+        'The selected color is the same as the previous, please choose another one'
       );
     }
   } else {
-    console.log("Impossible change while driving");
+    console.log('Impossible change while driving');
   }
 };
 
@@ -117,9 +117,9 @@ const Motorcycle = function (model, color, engine) {
   this.performIfSpeeding = (DELAY_TIME) => {
     const SPEED_DIFFERENCE = 30;
     if (this.speed >= this.maxSpeed && !this.isOverheating) {
-      console.log("speed is too high, SLOW DOWN!");
+      console.log('speed is too high, SLOW DOWN!');
       if (this.speed - this.maxSpeed >= SPEED_DIFFERENCE) {
-        console.log("Engine overheating");
+        console.log('Engine overheating');
         this.isOverheating = true;
         setTimeout(() => {
           clearInterval(this.timerDriveId);
