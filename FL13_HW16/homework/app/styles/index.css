@@ -1,0 +1,61 @@
+body {
+  font-size: 18px;
+}
+#app-container {
+  margin: 20px auto;
+}
+.form {
+  padding: 10px;
+}
+.form input {
+  margin-right: 5px;
+  padding: 5px;
+  font: inherit;
+}
+.valid {
+  border: 1px solid #ddffdd;
+}
+.invalid {
+  border: 1px solid #c00000;
+}
+.btn.form-button {
+  border: solid 1px #ccc;
+  padding: 5px;
+}
+.loading {
+  display: none;
+  padding: 10px 30px;
+}
+.loading.visible {
+  display: block;
+}
+.table {
+  margin: 10px;
+  border-collapse: collapse;
+}
+.table td {
+  border: 1px solid #ccc;
+}
+.table td:first-child {
+  border: none;
+  padding-right: 50px;
+}
+span {
+  display: block;
+  min-width: 100px;
+  width: auto;
+}
+.btn {
+  padding: 5px;
+  font: inherit;
+  color: inherit;
+  border: 1px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btn:active {
+  border: none;
+}
+.btn:disabled {
+  color: #ccc;
+}
